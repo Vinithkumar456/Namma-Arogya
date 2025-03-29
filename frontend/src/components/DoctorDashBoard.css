@@ -1,0 +1,177 @@
+/* DoctorDashBoard.css */
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  /* Main container styling */
+  .flex {
+    display: flex;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  /* Link boxes styling */
+  .half-width {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .half-width:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Left box - Chat */
+  .bg-blue-500 {
+    background-color: #3b82f6;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .bg-blue-600 {
+    background-color: #2563eb;
+  }
+  
+  /* Right box - Video Call */
+  .bg-green-500 {
+    background-color: #10b981;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .bg-green-600 {
+    background-color: #059669;
+  }
+  
+  /* Common styling for both sections */
+  .flex.items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  /* Icon container styling */
+  .bg-white {
+    background-color: white;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Icon styling */
+  .h-16 {
+    height: 4rem;
+  }
+  
+  .icon-size {
+    width: 4rem;
+  }
+  
+  .text-blue-500 {
+    color: #3b82f6;
+  }
+  
+  .text-green-500 {
+    color: #10b981;
+  }
+  
+  /* Text styling */
+  .text-white {
+    color: white;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  /* Hover effects and animations */
+  .transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+  
+  .duration-300 {
+    transition-duration: 300ms;
+  }
+  
+  /* Additional styling for enhanced UI */
+  .half-width::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+  }
+  
+  /* Box shadow for depth */
+  .half-width:hover .bg-white {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Subtle animation for the icon containers */
+  .bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .flex {
+      flex-direction: column;
+    }
+    
+    .half-width {
+      width: 100%;
+      height: 50vh;
+    }
+  }

@@ -1,0 +1,177 @@
+/* Landingpage.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .haidoc-landing-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a2b4a;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #20b4b0;
+  }
+
+  .login-btn {
+    background-color: #20b4b0;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .doctor-login-btn {
+    background-color: #20b4b0;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  .register-btn {
+    background-color: #20b4b0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #18908c;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .content-left {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .content-left h1 {
+    color: #1a2b4a;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .content-left h1 span {
+    display: block;
+    color: #20b4b0;
+  }
+  
+  .content-left p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .consultation-btn {
+    background-color: #20b4b0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .consultation-btn:hover {
+    background-color: #18908c;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .stat-item h3 {
+    color: #1a2b4a;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    color: #666;
+  }
+  
+  .content-right {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    background-color: #e6f2f1;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .doctors-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #20b4b0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
