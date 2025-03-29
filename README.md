@@ -34,7 +34,7 @@ Namma Arogya is a smart healthcare application that predicts diseases based on s
 ### Backend (Node.js & Express)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/namma-arogya.git
+   https://github.com/Vinithkumar456/Namma-Arogya.git
    cd namma-arogya
    ```
 2. Install dependencies:
@@ -84,8 +84,7 @@ POST /predict
 }
 Response:
 {
-  "disease": "Flu",
-  "confidence": 0.85
+  "disease": "Flu"
 }
 ```
 
